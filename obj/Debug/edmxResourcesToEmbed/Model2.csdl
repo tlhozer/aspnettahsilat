@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tahsilat_verileriModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tahsilatablom">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Firma_Adi" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="Tahsilat_Yapan" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Odeme_Yapan" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Banka" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Sube" Type="Int16" />
+    <Property Name="Hesap_Iban" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tahsilat_Tarihi" Type="DateTime" Precision="0" />
+    <Property Name="Tutar" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Ssk" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Bagkur" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Kdv" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Kdv_2" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Muhtasar" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Gelir_Vergisi" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Gecici_Vergi" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Kurumlar_Vergisi" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Yapılandırma_Poset" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Diger" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Diger_Eski_Yillar" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Cesitli_Tahsilat" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Not" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="tahsilat_verileriEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tahsilatablom" EntityType="Self.tahsilatablom" />
+  </EntityContainer>
+</Schema>

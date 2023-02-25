@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tahsilat_verileriModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tahsilatbilgileri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Firma_Adi" Type="nvarchar" MaxLength="30" />
+    <Property Name="Tahsil_Yapan" Type="nvarchar" MaxLength="30" />
+    <Property Name="Odeme_Yapan" Type="nvarchar" MaxLength="30" />
+    <Property Name="Banka" Type="nvarchar" MaxLength="30" />
+    <Property Name="Sube" Type="nvarchar" MaxLength="20" />
+    <Property Name="Tahsilat_Turu" Type="nvarchar" MaxLength="30" />
+    <Property Name="Tahsilat_Miktari" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Hesap_Iban" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="Tutar" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Ssk" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Bagkur" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Kdv" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Kdv_2" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Muhtasar" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Gelir_Vergisi" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Gecici_Vergi" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Kurumlar_Vergisi" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Yapılandırma_Poset" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Cesitli_Tahsilat" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Diger" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Diger_Eski_Yillar" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Not" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="tahsilat_verileriModelStoreContainer">
+    <EntitySet Name="tahsilatbilgileri" EntityType="Self.tahsilatbilgileri" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tahsilat_verileriModelStoreContainer" CdmEntityContainer="tahsilat_verileriEntities4">
+    <EntitySetMapping Name="tahsilatbilgileri">
+      <EntityTypeMapping TypeName="tahsilat_verileriModel.tahsilatbilgileri">
+        <MappingFragment StoreEntitySet="tahsilatbilgileri">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Firma_Adi" ColumnName="Firma_Adi" />
+          <ScalarProperty Name="Tahsil_Yapan" ColumnName="Tahsil_Yapan" />
+          <ScalarProperty Name="Odeme_Yapan" ColumnName="Odeme_Yapan" />
+          <ScalarProperty Name="Banka" ColumnName="Banka" />
+          <ScalarProperty Name="Sube" ColumnName="Sube" />
+          <ScalarProperty Name="Tahsilat_Turu" ColumnName="Tahsilat_Turu" />
+          <ScalarProperty Name="Tahsilat_Miktari" ColumnName="Tahsilat_Miktari" />
+          <ScalarProperty Name="Hesap_Iban" ColumnName="Hesap_Iban" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+          <ScalarProperty Name="Ssk" ColumnName="Ssk" />
+          <ScalarProperty Name="Bagkur" ColumnName="Bagkur" />
+          <ScalarProperty Name="Kdv" ColumnName="Kdv" />
+          <ScalarProperty Name="Kdv_2" ColumnName="Kdv_2" />
+          <ScalarProperty Name="Muhtasar" ColumnName="Muhtasar" />
+          <ScalarProperty Name="Gelir_Vergisi" ColumnName="Gelir_Vergisi" />
+          <ScalarProperty Name="Gecici_Vergi" ColumnName="Gecici_Vergi" />
+          <ScalarProperty Name="Kurumlar_Vergisi" ColumnName="Kurumlar_Vergisi" />
+          <ScalarProperty Name="Yapılandırma_Poset" ColumnName="Yapılandırma_Poset" />
+          <ScalarProperty Name="Cesitli_Tahsilat" ColumnName="Cesitli_Tahsilat" />
+          <ScalarProperty Name="Diger" ColumnName="Diger" />
+          <ScalarProperty Name="Diger_Eski_Yillar" ColumnName="Diger_Eski_Yillar" />
+          <ScalarProperty Name="Not" ColumnName="Not" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
